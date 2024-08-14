@@ -1,0 +1,25 @@
+# Use the official Python 3 image as the base
+FROM mcr.microsoft.com/devcontainers/python:0-3.11
+
+# Install Go
+RUN apt-get update && \
+    apt-get install -y wget && \
+    wget https://dl.google.com/go/go1.17.2.linux-amd64.tar.gz && \
+    tar -C /usr/local -xzf go1.17.2.linux-amd64.tar.gz && \
+    rm go1.17.2.linux-amd64.tar.gz
+
+# Set up Go environment variables
+ENV PATH="/usr/local/go/bin:${PATH}"
+ENV GOPATH="/go"
+ENV PATH="${GOPATH}/bin:${PATH}"
+
+# Install any additional tools or dependencies here
+# For example:
+# RUN pip install some-python-package
+# RUN go get -u github.com/some/go/package
+
+# Set the working directory
+WORKDIR /workspace
+
+# Copy the current directory contents into the container at /workspace
+COPY . /workspace
