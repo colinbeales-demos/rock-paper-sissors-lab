@@ -5,7 +5,7 @@ FROM mcr.microsoft.com/devcontainers/python:0-3.11
 RUN apt-get update && \
     apt-get install -y wget && \
     wget https://go.dev/dl/go1.23.0.linux-amd64.tar.gz && \
-    tar -C /usr/go1.23.0.linux-amd64.tar.gz && \
+    tar -C /usr/local -xzf go1.23.0.linux-amd64.tar.gz && \
     rm go1.23.0.linux-amd64.tar.gz
 
 # Set up Go environment variables
