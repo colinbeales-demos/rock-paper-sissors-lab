@@ -6,13 +6,15 @@ RUN apt-get update && \
     apt-get install -y wget && \
     wget https://go.dev/dl/go1.23.0.linux-amd64.tar.gz && \
     tar -C /usr/local -xzf go1.23.0.linux-amd64.tar.gz && \
-    rm go1.23.0.linux-amd64.tar.gz && \
-    go install golang.org/x/tools/gopls@latest
+    rm go1.23.0.linux-amd64.tar.gz
 
 # Set up Go environment variables
 ENV PATH="/usr/local/go/bin:${PATH}"
 ENV GOPATH="/go"
 ENV PATH="${GOPATH}/bin:${PATH}"
+
+# Install gopls language server
+RUN go install golang.org/x/tools/gopls@latest
 
 # Install any additional tools or dependencies here
 # For example:
