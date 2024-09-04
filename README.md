@@ -16,7 +16,7 @@ Depending on the time available, participants will be able to complete the game 
 
 ## Instructions 
 
-Inside the `.instructions` folder you will find a number of markdown files that contain the instructions for this workshop.
+Inside the `.instructions` folder you will find a number of markdown files that contain the instructions for this workshop. The links below will index you into these instuction files.
 
 Filename | Description
 --- | ---
@@ -35,30 +35,25 @@ If you're planning to run a GitHub Copilot workshop, please review the [workshop
 
 In this project you will find: 
 
-* a `main.py` file with no contents
-* a devcontainer that installs CodeTour and GitHub Copilot when the Codespace is created (If you want to use Codespaces)
+* a `main.py` file with no contents (a start point if you are using Python)
+* a `main.go` file with no contents (a start point if you are using Go)
 * an `.instructions` folder all the instructions for this workshop.
 * an `assets` folder containing images used in this workshop documentation.
-* a `.tours` folder that includes the CodeTour file if you wish to use it.
-
-
+* a `.tours` folder that includes the CodeTour file if you wish to use it. You will need the CodeTour extension from Jonathan Carter
 
 
 ## FAQ 
 
-- **How do I get a GitHub Copilot license?**
-  - You can request a trial license from your GitHub Sales representative or via Copilot for Individuals or Business licenses.
-- **How do I get a GitHub Codespaces license?**
-    - Codespaces is included with GitHub Enterprise Cloud, GitHub Enterprise Server, and GitHub Free. You can check under your [billing settings page](https://github.com/settings/billing).
-- **I am having trouble activating GitHub Copilot after I load the plugin, what should I do?**
-    - This could be because you launched your Codespace before you activated GitHub Copilot or accepted the invitation to the trial org. Please try to reload your Codespace and try again.
+- **How do I get a GitHub Copilot setup in my IDE?**
+  - Follow the instructions [here](https://docs.github.com/en/copilot/using-github-copilot/getting-code-suggestions-in-your-ide-with-github-copilot). The tabs at the top allow you to pick your IDE which gives specific steps for the chosen IDE.
+- **What language can I use for the lab?**
+    - There are files in place for you to use Pythonb or Go, however Copilot supports all languages, therefore if you have the tools in your environment for a different language then Copilot can heelp you write code for your chosen language. Just create a new codefile and start getting suggestions.
 
 ## Acknowledgements
 
 A special thanks to the following awesome Hubbers who have contributed in many different ways to our workshops. 
-[blackgirlbytes](https://github.com/blackgirlbytes), [pierluigi](https://github.com/pierluigi), [yuichielectric](https://github.com/yuichielectric), [dchomh](https://github.com/dchomh), [nolecram](https://github.com/nolecram), [rsymo](https://github.com/rsymo), [damovisa](https://github.com/damovisa) and anyone else I've inadvertently missed.
+[anthonyborton](https://github.com/anthonyborton), [blackgirlbytes](https://github.com/blackgirlbytes), [pierluigi](https://github.com/pierluigi), [yuichielectric](https://github.com/yuichielectric), [dchomh](https://github.com/dchomh), [nolecram](https://github.com/nolecram), [rsymo](https://github.com/rsymo), [damovisa](https://github.com/damovisa) and anyone else I've inadvertently missed.
 
 Enjoy your workshop!
-[anthonyborton](https://github.com/anthonyborton)
 
-_v1.0 Released May, 2023_
+_v1.1 Released Sept, 2024_
